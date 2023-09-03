@@ -9,7 +9,7 @@ const {Navigator, Screen} = createStackNavigator()
 export function StackNavigation(){
   return(
     <Navigator>
-      <Screen name='SignIn' component={SignIn}/>
+      <Screen name='SignIn' component={SignIn} options={{headerShown: false}}/>
       <Screen name='Navigation' component={TabNavigation}/>
     </Navigator>
   )
