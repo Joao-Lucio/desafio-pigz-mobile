@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {Routes} from './src/routes'
 
 import {
   useFonts,
@@ -28,10 +29,7 @@ const [hasLoadedFonts] = useFonts({
 if(!hasLoadedFonts) return null
 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Routes/>
   );
 }
 

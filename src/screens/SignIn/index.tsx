@@ -8,7 +8,7 @@ export function SignIn(){
   const navigation = useNavigation();
 
   function navegar(){
-    console.log('Foi')
+    navigation.navigate('Navigation')
   }
 
   return (
