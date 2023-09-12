@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import {Routes} from './src/routes'
-import {Main} from './src/components/Main'
+import {ContainerMain} from './src/components/ContainerMain'
+import { ThemeProvider } from 'styled-components/native';
+import light from './src/theme/light';
 
 import {
   useFonts,
@@ -31,10 +33,13 @@ const [hasLoadedFonts] = useFonts({
 if(!hasLoadedFonts) return null
 
   return (
-    <Main>
+    <ThemeProvider theme={light}>
+      <ContainerMain>
       <StatusBar backgroundColor='white'/>
       <Routes/>
-    </Main>
+    </ContainerMain>
+    </ThemeProvider>
+    
     
   );
 }
