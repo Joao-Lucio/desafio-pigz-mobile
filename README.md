@@ -6,3 +6,7 @@
 
 
 ![Tela de Login](https://drive.google.com/uc?id=120Dh8k9VgNyS6ZcYCntyq--4F0h9lfIA)
+
+![Tela de Home](https://drive.google.com/uc?id=17bhd2xHDFujS74_ZR1KFFGq_32aVcoej)
+
+![Tela de Novo delivery](https://drive.google.com/uc?id=1PA96mF02oIrt7x16Ldr_8PxwwJBMTpaX)
