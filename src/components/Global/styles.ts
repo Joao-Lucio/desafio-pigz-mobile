@@ -21,3 +21,30 @@ font-family: ${({theme}) => theme.FONTS.POPPINS_MEDIUM};
 color: ${({theme}) => theme.COLORS.TEXT_PRIMARY};
 margin-top: 10px;
 `
+
+export const TextMoney = styled(TextButton)`
+font-family: ${({theme}) => theme.FONTS.ROBOTO_BOLD};
+font-size:30px;
+`
+
+export const TitleContainer = styled.Text`
+font-family: ${({theme}) => theme.FONTS.POPPINS_BOLD};
+font-size:16px;
+color:${({theme}) => theme.COLORS.TITLE_CONTAINER};
+margin-left:14px;
+margin-top:10px;
+`
+
+export const TitleMiniContainer = styled.Text`
+font-family: ${({theme}) => theme.FONTS.POPPINS_REGULAR};
+font-size:11px;
+color: ${({theme}) => theme.COLORS.TEXT_PRIMARY};
+margin-top: 10px;
+`
+
+export const TextValor = styled.Text`
+font-family: ${({theme}) => theme.FONTS.POPPINS_MEDIUM};
+font-size:40px;
+color: ${({theme}) => theme.COLORS.TITLE_CONTAINER};
+align-self:center;
+`
