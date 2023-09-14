@@ -9,9 +9,11 @@ export default {
     SUB_TITLE: '#222222',
     TEXT_BUTTON: '#FFF',
     TEXT_BUTTON_SECONDARY: '#676767',
-    LINE: '#676767',
+    TEXT_BUTTON_TERCEARIO: '#E8453E',
+    LINE: '#CCC',
     BORDER: '#ccc',
     TITLE_CONTAINER: '#000',
+    DELIVERY_INFO: '#707070',
   },
 
   FONTS: {
