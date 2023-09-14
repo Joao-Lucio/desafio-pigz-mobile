@@ -10,6 +10,8 @@ export default {
     TEXT_BUTTON: '#FFF',
     TEXT_BUTTON_SECONDARY: '#676767',
     LINE: '#676767',
+    BORDER: '#ccc',
+    TITLE_CONTAINER: '#000',
   },
 
   FONTS: {
