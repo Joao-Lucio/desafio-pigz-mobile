@@ -8,7 +8,7 @@ type Props = {
 
 export default function  BackgroundGradient({children} : Props){
   return (
-    <LinearGradient colors={[theme.COLORS.SECONDARY, theme.COLORS.PRIMARY]} start={{x:0,y:0}} end={{x:1,y:0}} style={{borderRadius:16,  marginRight:24, marginTop: 28}}>
+    <LinearGradient colors={[theme.COLORS.SECONDARY, theme.COLORS.PRIMARY]} start={{x:0,y:0}} end={{x:1,y:0}} style={{borderRadius:16, marginTop: 28}}>
       {children}
     </LinearGradient>
   )
