@@ -5,7 +5,7 @@ import Report from '../../assets/report.svg'
 import Profile from '../../assets/profile.svg'
 import Overview from '../../assets/home.svg'
 import Back from '../../assets/arrow-back.svg'
-import styleGlobal from '../../globalStyle'
+import theme from '../theme/light'
 
 import {Home} from '../screens/Home'
 
@@ -18,11 +18,11 @@ export default function TabNavigation(){
     screenOptions={{
       tabBarActiveTintColor: "#FA641E",
       tabBarLabelStyle: {
-        fontFamily: styleGlobal.fonts.medium,
+        fontFamily: theme.FONTS.POPPINS_MEDIUM,
       }
     }}>
       <Screen name='Relatorio' component={Home} options={{headerTitleAlign:'center',tabBarIcon: Report}}/>
-      <Screen name='Visão Geral' component={Home} options={{headerTitleAlign:'center', headerTitleStyle:{fontFamily: styleGlobal.fonts.medium,fontSize:18,color:'#222222'},tabBarIcon: Overview, headerLeft: ()=>(
+      <Screen name='Visão Geral' component={Home} options={{headerTitleAlign:'center', headerTitleStyle:{fontFamily: theme.FONTS.POPPINS_MEDIUM,fontSize:18,color:'#222222'},tabBarIcon: Overview, headerLeft: ()=>(
         <Back style={{marginLeft: 16, marginTop:4}}/>
       )}}/>
       <Screen name='Perfil' component={Home} options={{headerTitleAlign:'center',tabBarIcon: Profile}}/>
