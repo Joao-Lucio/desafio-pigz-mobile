@@ -37,21 +37,16 @@ justify-content:center;
 margin:20px;
 `
 
-export const Line = styled.View`
-flex: 1;
-height: 1px;
-background-color: ${({theme}) => theme.COLORS.LINE};
-margin-top: 12px;
-margin-left: 8px;
-`
-
 export const Border = styled.View`
 border-width: 1px;
 border-radius:16px;
 justify-content:center;
 align-items:center;
-margin-right: 24px;
 margin-top:24px;
 height: 48px;
-border-color:${({theme}) => theme.COLORS.BORDER}
+border-color:${({theme}) => theme.COLORS.BORDER};
+`
+export const BorderSecundary = styled(Border)`
+border-color:${({theme}) => theme.COLORS.SECONDARY};
+
 `

@@ -5,8 +5,8 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import Google from '../../../assets/logo-google.svg'
 import {EditText} from '../../components/EditText'
 import ButtonPress from '../../components/ButtonPress';
-import { Conteiner, Link, Button, SubContainer, Line, Border } from './styles';
-import {TextButton,Title, SubTitle, Text} from '../../components/Global/styles'
+import { Conteiner, Link, Button, SubContainer, Border } from './styles';
+import {TextButton,Title, SubTitle, Text, Line} from '../../components/Global/styles'
 import { ContainerMain } from '../../components/ContainerMain';
 import BackgroundGradient from '../../components/BackgroundGradient'
 import theme from '../../theme/light'
@@ -51,7 +51,7 @@ export function SignIn(){
       <Conteiner>
         <SubContainer style={{justifyContent:'flex-start'}}>
           <Title style={{fontSize: 13}}>Entrar com</Title>
-          <Line/>
+          <Line style={{flex:1}}/>
         </SubContainer>
         <Border>
           <Google style={{position:'absolute', alignSelf:'flex-start', marginLeft: 16}}/>
