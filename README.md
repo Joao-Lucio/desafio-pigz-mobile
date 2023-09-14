@@ -4,4 +4,4 @@
 
 * [Link do Protótipo](https://xd.adobe.com/view/aa9d5857-660a-48ea-82e0-cf7766754949-ffce/screen/94be1417-76a6-40c7-b704-ed813b104f4d/specs/)
 
-![Tela de Login](https://drive.google.com/drive/u/0/my-drive)
+![Tela de Login](https://drive.google.com/file/d/120Dh8k9VgNyS6ZcYCntyq--4F0h9lfIA/view?usp=sharing)
