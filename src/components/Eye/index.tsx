@@ -1,7 +1,6 @@
 import React from 'react'
 import { Feather } from "@expo/vector-icons"
 import { Container, ButtonEye } from './styles'
-import theme from '../../theme/light'
 
 export default function Eye(props){
   return(
@@ -10,7 +9,7 @@ export default function Eye(props){
         <Feather
           name={props.eye ? "eye" : 'eye-off'}
           size={24}
-          color={theme.COLORS.PRIMARY}
+          color={props.color}
           />
       </ButtonEye>
     </Container>
