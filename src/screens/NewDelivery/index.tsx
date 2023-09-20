@@ -1,18 +1,16 @@
 import {View} from 'react-native'
 import React from 'react'
-import Delivery from '../../../assets/delivery.svg'
-import Check from '../../../assets/check.svg'
-import Close from '../../../assets/close.svg'
-import { Container } from './styles';
-import { ContainerMain } from '../../components/ContainerMain';
-import InfoDelivery from '../../components/InfoDelivery';
-import { Line, LineVerticalBig, LineVerticalSmall, Percurso, TextDelivery, TextDeliveryInfo, TextDeliveryStatus } from '../../components/Global/styles';
-import BackgroundGradient from '../../components/BackgroundGradient';
-import CircleGradient from '../../components/CircleGradient';
-import CircleBorder from '../../components/CircleBorder';
-import ButtonPress from '../../components/ButtonPress';
+import Icon from '../../../assets/'
+import { Container } from './styles'
+import { ContainerMain } from '../../components/ContainerMain'
+import InfoDelivery from '../../components/InfoDelivery'
+import { Line, LineVerticalBig, LineVerticalSmall, Percurso, TextDelivery, TextDeliveryInfo, TextDeliveryStatus } from '../../components/Global/styles'
+import BackgroundGradient from '../../components/BackgroundGradient'
+import CircleGradient from '../../components/CircleGradient'
+import CircleBorder from '../../components/CircleBorder'
+import ButtonPress from '../../components/ButtonPress'
 import theme from '../../theme/light'
-import { BorderSecundary } from '../SignIn/styles';
+import { BorderSecundary } from '../SignIn/styles'
 
 export function NewDelivery(){
   return (
@@ -29,7 +27,7 @@ export function NewDelivery(){
         <View style={{marginLeft:20, marginRight:20}}>
         <BackgroundGradient>
           <View style={{flexDirection: 'row', alignItems:'center'}}>
-          <Delivery style={{marginLeft:20}}/>
+          <Icon.Delivery style={{marginLeft:20}}/>
           <View style={{padding:8, marginLeft:10}}>
             <TextDelivery>Entrega</TextDelivery>
             <Percurso>Percurso Total: 8km</Percurso>
@@ -58,11 +56,11 @@ export function NewDelivery(){
         </View>
         <BackgroundGradient>
           <ButtonPress text={'Aceitar'} color={theme.COLORS.TEXT_BUTTON}/>
-          <Check style={{position:'absolute', left:110, top:10}}/>
+          <Icon.Check style={{position:'absolute', left:110, top:10}}/>
         </BackgroundGradient>
         <BorderSecundary>
           <View style={{flexDirection:'row'}}>
-          <Close style={{marginTop: 11, marginRight:10}}/>
+          <Icon.Close style={{marginTop: 11, marginRight:10}}/>
           <ButtonPress text={'Rejeitar'} color={theme.COLORS.TEXT_BUTTON_TERCEARIO}/>
           </View>
         </BorderSecundary>

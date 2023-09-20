@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import theme from '../../theme/light'
-import Qrcode from '../../../assets/qrcode.svg'
+import Icon from '../../../assets/'
 import { useNavigation } from "@react-navigation/native";
 import { ContainerMain } from '../../components/ContainerMain';
 import { Conteiner, SubConteiner, EyeContainer, MiniContainer, ContainerInputButton, ContainerInput, ContainerButton, ContainerQrcodeButton, ContainerGradient } from './styles';
@@ -68,7 +68,7 @@ export function Home(){
         <ContainerGradient>
           <BackgroundGradient>
           <ContainerQrcodeButton>
-              <Qrcode style={{marginRight:10}}/>
+              <Icon.Qrcode style={{marginRight:10}}/>
               <ButtonPress text={'Escanear Qrcode'} color={theme.COLORS.TEXT_BUTTON}/>
             </ContainerQrcodeButton>
           </BackgroundGradient>
