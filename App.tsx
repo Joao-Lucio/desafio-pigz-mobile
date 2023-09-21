@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import {Routes} from './src/routes'
 import {ContainerMain} from './src/components/ContainerMain'
 import { ThemeProvider } from 'styled-components/native';
@@ -17,7 +17,6 @@ import {
   Poppins_600SemiBold,
   Poppins_700Bold
 } from '@expo-google-fonts/poppins'
-import { SafeAreaView } from 'react-native';
 
 export default function App() {
 
@@ -36,7 +35,7 @@ if(!hasLoadedFonts) return null
   return (
     <ThemeProvider theme={light}>
         <ContainerMain>
-          <StatusBar backgroundColor='white'/>
+          <StatusBar backgroundColor={light.COLORS.STATUS_BAR}/>
           <Routes/>
         </ContainerMain>
       

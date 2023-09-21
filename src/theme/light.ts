@@ -10,10 +10,12 @@ export default {
     TEXT_BUTTON: '#FFF',
     TEXT_BUTTON_SECONDARY: '#676767',
     TEXT_BUTTON_TERCEARIO: '#E8453E',
-    LINE: '#CCC',
-    BORDER: '#ccc',
     TITLE_CONTAINER: '#000',
     DELIVERY_INFO: '#707070',
+
+    LINE: '#CCC',
+    BORDER: '#ccc',
+    STATUS_BAR: '#fff',
   },
 
   FONTS: {
