@@ -17,6 +17,7 @@ import {
   Poppins_600SemiBold,
   Poppins_700Bold
 } from '@expo-google-fonts/poppins'
+import { SafeAreaView } from 'react-native';
 
 export default function App() {
 
@@ -34,10 +35,11 @@ if(!hasLoadedFonts) return null
 
   return (
     <ThemeProvider theme={light}>
-      <ContainerMain>
-      <StatusBar backgroundColor='white'/>
-      <Routes/>
-    </ContainerMain>
+        <ContainerMain>
+          <StatusBar backgroundColor='white'/>
+          <Routes/>
+        </ContainerMain>
+      
     </ThemeProvider>
     
     
