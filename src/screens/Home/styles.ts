@@ -12,6 +12,10 @@ flex-direction:row;
 margin: 20px;
 `
 
+export const Box = styled(SubConteiner)`
+margin-top: -10px;
+`
+
 export const EyeContainer = styled.View`
 align-items:flex-end;
 flex:1;

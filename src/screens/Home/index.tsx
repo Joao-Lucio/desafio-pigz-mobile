@@ -3,9 +3,9 @@ import theme from '../../theme/light'
 import Icon from '../../../assets/'
 import { useNavigation } from "@react-navigation/native";
 import { ContainerMain } from '../../components/ContainerMain';
-import { Conteiner, SubConteiner, EyeContainer, MiniContainer, ContainerInputButton, ContainerInput, ContainerButton, ContainerQrcodeButton, ContainerGradient } from './styles';
+import { Conteiner, SubConteiner, EyeContainer, MiniContainer, ContainerInputButton, ContainerInput, ContainerButton, ContainerQrcodeButton, ContainerGradient, Box } from './styles';
 import BackgroundGradient from '../../components/BackgroundGradient'
-import {TextButton, TextMoney, TextValor, TitleContainer, TitleMiniContainer} from '../../components/Global/styles'
+import {TextButton, TextDate, TextMoney, TextValor, TitleContainer, TitleMiniContainer} from '../../components/Global/styles'
 import Eye from '../../components/Eye';
 import ContainerShadow from '../../components/ContainerShadow';
 import { EditText } from '../../components/EditText';
@@ -27,18 +27,18 @@ export function Home(){
         <BackgroundGradient>
             <SubConteiner>
                 <TextButton>Ganhos do Dia</TextButton>
-                <TextButton style={{position:'absolute', right:0}}>01/09</TextButton>
+                <TextDate>01/09</TextDate>
               </SubConteiner>
-              <SubConteiner style={{marginTop: -10}}>
+              <Box>
                 {eye ? (<TextMoney>R$ 150</TextMoney>) : (<TextMoney>R$ ***</TextMoney>)}
                 <EyeContainer>
                   <Eye eye={eye} setEye={setEye} color={theme.COLORS.BACKGROUND}/>
                 </EyeContainer>
-              </SubConteiner>
+              </Box>
         </BackgroundGradient>
         <ContainerShadow>
           <TitleContainer>Resumos das Entregas</TitleContainer>
-          <SubConteiner style={{marginBottom: 40}}>
+          <SubConteiner>
             <MiniContainer>
             <TitleMiniContainer>Aceitas</TitleMiniContainer>
                 <TextValor>15</TextValor>

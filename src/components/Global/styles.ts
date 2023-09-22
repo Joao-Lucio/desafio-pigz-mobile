@@ -12,6 +12,11 @@ font-family: ${({theme}) => theme.FONTS.POPPINS_MEDIUM};
 font-size:16px;
 `
 
+export const TextDate = styled(TextButton)`
+position: absolute;
+right: 0px
+`
+
 export const Text = styled.Text`
 font-size: 13px;
 font-family: ${({theme}) => theme.FONTS.POPPINS_MEDIUM};
