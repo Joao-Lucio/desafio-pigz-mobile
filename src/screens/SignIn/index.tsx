@@ -4,8 +4,8 @@ import Icon from '../../../assets/'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {EditText} from '../../components/EditText'
 import ButtonPress from '../../components/ButtonPress';
-import { Conteiner, Link, SubContainer, Border } from './styles';
-import {TextButton,Title, SubTitle, Text, Line} from '../../components/Global/styles'
+import { Conteiner, Link, SubContainer, Border, Header } from './styles';
+import {Title, Text, Line, TextDestaque} from '../../components/Global/styles'
 import { ContainerMain } from '../../components/ContainerMain';
 import BackgroundGradient from '../../components/BackgroundGradient'
 import theme from '../../theme/light'
@@ -25,12 +25,12 @@ export function SignIn(){
 
   return (
     <ContainerMain>
-      <Conteiner style={{alignItems: 'center'}}>
+      <Header>
         <Icon.LogoPigz/>
         <Title>Para entregadores</Title>
-      </Conteiner>
+      </Header>
       <Conteiner>
-          <SubTitle>Login</SubTitle>
+          <Title $size='16px'>Login</Title>
           <EditText title='Email ou Telefone' type='email' placeholder='example@pigz.com.br'/>
           <EditText title='Senha' type='pass' placeholder='********'/>
           <TouchableOpacity>
@@ -40,16 +40,16 @@ export function SignIn(){
             <ButtonPress text={'Entrar'} action={navegar} color={theme.COLORS.TEXT_BUTTON}/>
           </BackgroundGradient>
           <SubContainer>
-            <Text style={{paddingEnd: 8}}>Não tem uma Conta?</Text>
+            <Text>Não tem uma Conta?</Text>
             <TouchableOpacity>
-            <Text style={{color: theme.COLORS.PRIMARY}}>Criar agora!</Text>
+            <TextDestaque>Criar agora!</TextDestaque>
             </TouchableOpacity>
           </SubContainer>
       </Conteiner>
       <Conteiner>
-        <SubContainer style={{justifyContent:'flex-start'}}>
-          <Title style={{fontSize: 13}}>Entrar com</Title>
-          <Line style={{flex:1}}/>
+        <SubContainer>
+          <Title $size='13px'>Entrar com</Title>
+          <Line/>
         </SubContainer>
         <Border>
           <Icon.LogoGoogle style={{position:'absolute', alignSelf:'flex-start', marginLeft: 16}}/>

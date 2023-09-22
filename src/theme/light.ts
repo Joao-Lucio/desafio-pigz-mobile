@@ -12,6 +12,8 @@ export default {
     TEXT_BUTTON_TERCEARIO: '#E8453E',
     TITLE_CONTAINER: '#000',
     DELIVERY_INFO: '#707070',
+    HEADER_TEXT_COLOR: '#222222',
+    TEXT_DESTAQUE: '#FA641E',
 
     LINE: '#CCC',
     BORDER: '#ccc',

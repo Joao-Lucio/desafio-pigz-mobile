@@ -11,22 +11,20 @@ type Props = TextInputProps & {
   placeholder?: string
 }
 
-
-
 export function EditText({title, placeholder, type, ...rest}: Props) {
 
   const [eye, setEye] = useState(true)
   
   return (
-    <Container>
+    <View>
       <Text>{title}</Text>
       {type === 'pass' ? (
-        <View style={{flexDirection: 'row'}}>
+        <Container>
           <InputData placeholder={placeholder} $type={type} secureTextEntry={eye} style={{flex:1}}/>
           <Eye eye={eye} setEye={setEye} color={theme.COLORS.PRIMARY}/>
-          </View>
+          </Container>
       ) : (
         <InputData placeholder={placeholder} $type={type} />)}
-    </Container>
+    </View>
   )
 }

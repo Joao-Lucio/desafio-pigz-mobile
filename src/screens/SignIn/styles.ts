@@ -7,6 +7,10 @@ margin-left: 24px;
 margin-right: 24px;
 `
 
+export const Header = styled(Conteiner)`
+align-items: center;
+`
+
 export const Link = styled.Text`
 align-self:flex-start;
 margin-top: 20px;
