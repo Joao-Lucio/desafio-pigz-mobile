@@ -14,7 +14,7 @@ font-size:16px;
 
 export const TextDate = styled(TextButton)`
 position: absolute;
-right: 0px
+right: 0px;
 `
 
 export const Text = styled.Text`
@@ -60,6 +60,7 @@ export const TextDeliveryInfo = styled.Text`
 font-family: ${({theme}) => theme.FONTS.POPPINS_REGULAR};
 font-size: 14px;
 color: ${({theme}) => theme.COLORS.DELIVERY_INFO};
+margin-top: 5px;
 `
 
 export const TextDeliveryValor = styled.Text<{$type?: string}>`

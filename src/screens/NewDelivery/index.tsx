@@ -1,7 +1,7 @@
 import {View} from 'react-native'
 import React from 'react'
 import Icon from '../../../assets/'
-import { Container } from './styles'
+import { Box, Container, SubConteiner } from './styles'
 import { ContainerMain } from '../../components/ContainerMain'
 import InfoDelivery from '../../components/InfoDelivery'
 import { Line, LineVerticalBig, LineVerticalSmall, Percurso, TextDelivery, TextDeliveryInfo, TextDeliveryStatus } from '../../components/Global/styles'
@@ -16,25 +16,25 @@ export function NewDelivery(){
   return (
     <ContainerMain>
       <Container>
-        <View style={{flexDirection:'row'}}>
+        <SubConteiner>
         <InfoDelivery info={'Tempo Estimado'} valor={'30 Min'}/>
         <InfoDelivery info={'Número de ID'} valor={'#6789'}/>
-        </View>
+        </SubConteiner>
         <Line/>
-        <View style={{flexDirection:'row', marginTop:20}}>
+        <SubConteiner $top='20px'>
         <InfoDelivery info={'Valor da Entrega'} valor={'R$ 13,75'} type={'destaque'}/>
-        </View>
-        <View style={{marginLeft:20, marginRight:20}}>
+        </SubConteiner>
+        <Box>
         <BackgroundGradient>
-          <View style={{flexDirection: 'row', alignItems:'center'}}>
-          <Icon.Delivery style={{marginLeft:20}}/>
-          <View style={{padding:8, marginLeft:10}}>
+          <SubConteiner>
+          <Icon.Delivery style={{marginLeft:20, marginTop:10}}/>
+          <Box $left='10px'>
             <TextDelivery>Entrega</TextDelivery>
             <Percurso>Percurso Total: 8km</Percurso>
-        </View>
-          </View>
+        </Box>
+          </SubConteiner>
         </BackgroundGradient>
-        <View style={{flexDirection:'row',marginLeft: 32}}>
+        <SubConteiner $left='32px'>
           <View>
           <LineVerticalBig/>
             <CircleGradient/>
@@ -45,26 +45,26 @@ export function NewDelivery(){
             <LineVerticalSmall/>
             <CircleBorder/>
           </View>
-          <View style={{marginLeft:12, marginTop:34}}>
+          <Box $left='12px' $top='34px'>
             <TextDeliveryStatus>Coleta</TextDeliveryStatus>  
-            <TextDeliveryInfo style={{marginTop:6}}>Restaurante Recanto da Peixada</TextDeliveryInfo>  
+            <TextDeliveryInfo>Restaurante Recanto da Peixada</TextDeliveryInfo>  
             <TextDeliveryInfo>Distancia: 2km</TextDeliveryInfo> 
-            <TextDeliveryStatus style={{marginTop:3}}>Entrega</TextDeliveryStatus>
-            <TextDeliveryInfo style={{marginTop:5}}>Av: Cabo dos Soldados - Caranã</TextDeliveryInfo>  
+            <TextDeliveryStatus>Entrega</TextDeliveryStatus>
+            <TextDeliveryInfo>Av: Cabo dos Soldados - Caranã</TextDeliveryInfo>  
             <TextDeliveryInfo>Distancia: 6km</TextDeliveryInfo>          
-          </View>
-        </View>
+          </Box>
+        </SubConteiner>
         <BackgroundGradient>
           <ButtonPress text={'Aceitar'} color={theme.COLORS.TEXT_BUTTON}/>
           <Icon.Check style={{position:'absolute', left:110, top:10}}/>
         </BackgroundGradient>
         <BorderSecundary>
-          <View style={{flexDirection:'row'}}>
+          <SubConteiner>
           <Icon.Close style={{marginTop: 11, marginRight:10}}/>
           <ButtonPress text={'Rejeitar'} color={theme.COLORS.TEXT_BUTTON_TERCEARIO}/>
-          </View>
+          </SubConteiner>
         </BorderSecundary>
-        </View>
+        </Box>
       </Container>
     </ContainerMain>
   )
