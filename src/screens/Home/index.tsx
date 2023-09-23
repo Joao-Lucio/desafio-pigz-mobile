@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import theme from '../../theme/light'
 import Icon from '../../../assets/'
 import { useNavigation } from "@react-navigation/native";
@@ -10,6 +10,8 @@ import Eye from '../../components/Eye';
 import ContainerShadow from '../../components/ContainerShadow';
 import { EditText } from '../../components/EditText';
 import ButtonPress from '../../components/ButtonPress';
+import moment from 'moment';
+
 
 export function Home(){
 
@@ -20,6 +22,12 @@ export function Home(){
   }
 
   const [eye, setEye] = useState(true)
+  const [currentDate, setCurrentDate] = useState('0')
+
+  useEffect(()=>{
+    let date = moment().format('DD/MM')
+    setCurrentDate(date)
+  },[])
 
   return (
     <ContainerMain>
@@ -27,7 +35,7 @@ export function Home(){
         <BackgroundGradient>
             <SubConteiner>
                 <TextButton>Ganhos do Dia</TextButton>
-                <TextDate>01/09</TextDate>
+                <TextDate>{currentDate}</TextDate>
               </SubConteiner>
               <Box>
                 {eye ? (<TextMoney>R$ 150</TextMoney>) : (<TextMoney>R$ ***</TextMoney>)}
