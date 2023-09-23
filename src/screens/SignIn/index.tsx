@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect} from 'react'
 import { useNavigation } from "@react-navigation/native";
 import Icon from '../../../assets/'
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -9,6 +9,7 @@ import {Title, Text, Line, TextDestaque} from '../../components/Global/styles'
 import { ContainerMain } from '../../components/ContainerMain';
 import BackgroundGradient from '../../components/BackgroundGradient'
 import theme from '../../theme/light'
+import {BackHandler} from 'react-native'
 
 export function SignIn(){
 
@@ -17,11 +18,16 @@ export function SignIn(){
   function navegar(){
     navigation.navigate('Navigation')
   }
-  const [eye, setEye] = useState(true)
 
   const loginGoogle = ()=>{
     console.log('API GOOGLE')
   }
+
+  useEffect(() => {
+    BackHandler.addEventListener('hardwareBackPress', () => {
+      return true
+    })
+  }, [])
 
   return (
     <ContainerMain>
